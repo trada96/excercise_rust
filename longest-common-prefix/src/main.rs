@@ -7,7 +7,7 @@ impl Solution {
 
         for i in (1..min_length+1).rev() {
             let prefix = &strs[0][0..i];
-            if strs.iter().all(|x| x.find(prefix) == Some(0)){
+            if strs.iter().all(|x| x.find(prefix) == Some(0)){  // x.starts_with(prefix) == true
                 return prefix.to_string();
             }
 
