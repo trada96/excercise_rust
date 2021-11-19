@@ -1,4 +1,5 @@
 struct Solution;
+
 impl Solution {
     pub fn is_valid(s: String) -> bool {
         let mut list_of_brackets = Vec::new();
@@ -16,7 +17,6 @@ impl Solution {
         return list_of_brackets.is_empty()
     }
 }
-
 
 
 fn main() {
